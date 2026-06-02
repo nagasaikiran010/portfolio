@@ -425,7 +425,7 @@ h2.sec-title{
       <span class="role-pill hi">Security Analyst</span>
       <span class="role-pill">@ Digit Insurance</span>
       <span class="role-pill">CRTP Certified</span>
-      <span class="role-pill">BSCP inprogress</span>
+      <span class="role-pill">BSCP · In Progress</span>
     </div>
     <p class="hero-desc">
       Specializing in <strong>VAPT &amp; Application Security</strong> with expertise in identifying and exploiting vulnerabilities before attackers do. I secure the stack so your users sleep peacefully.
@@ -448,7 +448,7 @@ h2.sec-title{
       <div class="about-body reveal reveal-d1">
         <p>I am a <strong>Security Analyst at Digit Insurance</strong> with a combined 2.7 years of hands-on experience in cybersecurity across two roles — as a Security Testing Engineer at ConvertCart and currently in security operations at Digit Insurance. My work spans web, API and Active Directory security — leveraging industry-standard tools such as Burp Suite, Nmap, Postman and Nessus to identify and remediate critical security risks before they can be exploited.</p>
         <p>I hold the <strong>Certified Red Team Professional (CRTP)</strong> certification from Altered Security, with hands-on expertise in Active Directory attacks, lateral movement, and privilege escalation — bringing a real-world offensive perspective to securing enterprise environments.</p>
-        <p>I work closely with <strong>development and operations teams</strong> to integrate security practices throughout the software development lifecycle, ensuring vulnerabilities are addressed proactively rather than reactively. My approach balances technical depth with clear communication — translating complex security findings into actionable insights for both technical and non-technical stakeholders.</p>
+        <p>I work closely with development and operations teams to integrate security practices throughout the software development lifecycle, ensuring vulnerabilities are addressed proactively rather than reactively. My approach balances technical depth with clear communication — translating complex security findings into actionable insights for both technical and non-technical stakeholders.</p>
         <p>I am deeply passionate and curious — always eager to learn new things, explore new topics, and push the boundaries of what I know in the ever-evolving world of cybersecurity.</p>
         <p>Between 2022 and 2024 I dedicated myself to intensive self-study — attempting OSCP, practising on TryHackMe and HackTheBox (Guru level), and earning a Hall of Fame recognition through bug bounty. I chose depth over speed.</p>
         <p>In my day-to-day life, I leverage <strong>agentic AI</strong> to improve my productivity — automating repetitive tasks, accelerating research, and staying ahead in a fast-moving field.</p>
@@ -492,7 +492,7 @@ h2.sec-title{
         <div class="cert-num">02</div>
         <div class="cert-title">
           ConvertCart
-          <span>Security Testing Engineer · Nov 2021 – Dec 2022 · 1 yr 1 mo 23 days</span>
+          <span>Security Testing Engineer · Nov 2021 – Dec 2022 · <strong>1 yr 1 mo 23 days</strong></span>
           <span style="font-family:var(--mono);font-size:.7rem;color:var(--blue);letter-spacing:1px;margin-top:4px;display:block;">E-commerce</span>
           <span style="font-size:.88rem;color:var(--muted);margin-top:8px;display:block;line-height:1.6;">Performed security testing on web applications and APIs, identified vulnerabilities across the e-commerce platform, and worked with development teams to remediate risks in line with OWASP standards.</span>
           <ul style="font-size:.88rem;color:var(--muted);margin-top:10px;line-height:1.8;padding-left:16px;">
@@ -521,7 +521,7 @@ h2.sec-title{
         <div class="chips">
           <span class="chip">Vulnerability Assessment & Penetration Testing</span>
           <span class="chip">Application Security</span>
-          <span class="chip">OWASP Top 10 in Web and API</span>
+          <span class="chip">OWASP Top 10 · Web &amp; API</span>
           <span class="chip">Network VAPT</span>
           <span class="chip">Linux</span>
           <span class="chip">Windows</span>
@@ -702,7 +702,8 @@ h2.sec-title{
   const el = document.getElementById('digit-duration');
   if(el) el.textContent = `Security Analyst · Dec 26, 2024 – Present · ${y > 0 ? y+' yr ' : ''}${m} mo ${d} days`;
 })();
-document.getElementById('yr').textContent = new Date().getFullYear();
+const yrEl = document.getElementById('yr');
+if(yrEl) yrEl.textContent = new Date().getFullYear();
 
 /* custom cursor */
 const cd = document.getElementById('cd'), cr = document.getElementById('cr');
